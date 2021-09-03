@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // prompt의 , 
+        var userName = prompt("이름은?", "");
+        var userHeight = prompt("신장은?", 0);
+        var userHeight =prompt("몸무게는?",  0);
+
+        var normal_w = (userHeight - 100) * 0.9;
+        //정상체중에서 오차범위인 -5, +5사이일때 true 리턴합니다.
+        var result =userWeight >= normal_w - 5 && userWeight <= normal_w +5;
+        //result 값이 true면 적정 체중입니다.
+        //result 값이 true면 "적정 체중입니다." : "적정 체중이 아닙니다." 리턴
+        var result = result ?" 적정 체중입니다." : "적정 체중이 아닙니다.";
+        document.write(userName + "님은" + result, "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
