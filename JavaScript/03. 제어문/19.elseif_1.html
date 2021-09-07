@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 주석 처리 되어있는 코드들은 책에 있는 코드임...
+        // var mon = prompt("현재는 몇 월입니까?", "0");
+
+        // if(mon>=9&& mon <=11) {
+        //     document.write("독서의 계절이네요!!");
+        // } else if (mon>=6 && mon <=8) {
+        //     document.write("여행가기 좋은 여름입니다.");
+        // } else if (mon >=3 && mon <=5) {
+        //     document.write("햇살 가득한 봄이네요!!");
+        // } else {
+        //     document.write("스키의 계절 겨울이네요!!");
+        // }
+
+        var mon = prompt("현재는 몇 월입니까?", "0");
+
+        if(mon>=9&& mon <=11) {
+            document.write("가을");
+        } else if (mon>=6 && mon <=8) {
+            document.write("여름");
+        } else if (mon >=3 && mon <=5) {
+            document.write("봄");
+        } else if (mon >=1 && mon <=2 || mon ==12) {
+            document.write("겨울");
+        } else {
+            alert("1~12까지의 숫자를 입력해 주세요!");
+            location.reload();
+        }
+    </script>
+</body>
+</html>

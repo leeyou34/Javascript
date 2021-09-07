@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var result = confirm("정말로 탈퇴 하시겠습니까?");
+
+        if (result) {
+            document.write("탈퇴 되었습니다.")
+        } else {
+            document.write("탈퇴 취소 되었습니다.");
+        }
+
+        // there is another way of appraoching...
+
+
+        if (confirm("정말로 탈퇴하시겠습니까?")) {
+            document.write("탈퇴 되었습니다.");
+        } else {
+            document.write("탈퇴가 취소 되었습니다.");
+        }
+    </script>
+</body>
+</html>
