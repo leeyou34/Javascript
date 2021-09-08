@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스트링 오브젝</title>
+</head>
+<body>
+    <script>
+        var t="Hello Thank you good luck to you";
+
+        document.write("========charAt===========", "<br>");
+        document.write(t.charAt(16),"<br/>");
+
+        document.write("========indexOf===========", "<br>");
+        document.write(t.indexOf("you"), "<br/>");
+
+        
+        document.write("========indexOf(16)===========", "<br>");
+        document.write(t.indexOf("you", 16),"<br/>");
+
+        
+        document.write("========lastindexOf===========", "<br>");
+        document.write(t.lastIndexOf("you"), "<br/>");
+
+        
+        document.write("========lastindexOf(25)===========", "<br>");
+        document.write(t.lastIndexOf("you", 25),"<br/>");
+
+        
+        document.write("========match==========", "<br>");
+        document.write(t.match("luck"),"<br/>");
+
+        
+        document.write("========search===========", "<br>");
+        document.write(t.search("you"),"<br/>");
+
+        
+        document.write("========substr===========", "<br>");
+        document.write(t.substr(21,4), "<br/>");
+
+        
+        document.write("========substring===========", "<br>");
+        document.write(t.substring(6,12), "<br/>");
+
+
+        document.write("========replace===========", "<br>");
+        document.write(t.replace("you", "me"), "<br/>");
+
+        
+        document.write("========toLowerCase===========", "<br>");
+        document.write(t.toLowerCase(), "<br/>");
+
+        
+        document.write("========toUpperCase===========", "<br>");
+        document.write(t.toUpperCase(), "<br/>");
+        
+        
+        document.write("========length===========", "<br>");
+        document.write(t.length, "<br/>");
+
+        
+        document.write("========split===========", "<br>");
+        var s=t.split("");
+
+        
+        document.write("========indexOf===========", "<br>");
+        document.write(s[0], "<br/>");
+
+        
+        document.write("========indexOf===========", "<br>");
+        document.write(s[4], "<br/>");
+        
+        
+        document.write("========indexOf===========", "<br>");
+        var str ="A";
+
+        
+        document.write("========charCodeAt===========", "<br>");
+        var t=str.charCodeAt(0);
+
+        
+        document.write("========indexOf===========", "<br>");
+        document.write(t, "<br/>");
+
+        
+        document.write("========fromCharCode===========", "<br>");
+        document.write(String.fromCharCode(65), "<br/>");
+
+
+        document.write("=======split===================", "<br>");
+        var str = "ABCD";
+        document.write("=======charCodeAt==============", "<br>");
+        document.write(str.charCodeAt(1), "<br>");
+
+        document.write("=======charCodeAt==============", "<br>");
+        document.write(String.fromCharCodeAt(97), "<br>");
+
+        var phoneNum = "01012345678";
+        document.write("====phoneNum======", "<br>");
+        document.write(phoneNum.substring(0, phoneNum.length -4) + "****", "<br>");
+
+    </script>
+</body>
+</html>
