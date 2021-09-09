@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function_3</title>
+</head>
+<body>
+    <script>
+        function myFnc(name, area) {
+            document.write(typeof(name));
+            document.write("안녕하세요." + name +"입니다.", "<br>");
+            document.write("사는 곳은" + area + "입니다.", "<br><br>");
+        }
+
+        myFnc("홍당무", "서울");
+        myFnc("깍두기", "부산");
+        myFnc(123, "서울");
+
+        function sum() {
+            var sum = 0;
+            for(var i =0; i <arguments.length; i++) {
+                sum +=arguments[i]
+            }
+            document.write("sum = " + sum, "<br>");
+        }
+
+        sum(10, 20, 30);
+    </script>
+</body>
+</html>

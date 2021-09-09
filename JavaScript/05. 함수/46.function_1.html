@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count =0;
+
+        myFnc();
+
+        function myFnc() {
+            count++;
+            document.write("hello" + count, "<br>");
+        }
+
+        myFnc();
+        //익명 메소드 선언시, 호이스팅 방식이 적용되지 않음...
+        var theFnc =function() {
+            count++;
+            document.write("bye" +count, "<br>");
+        }
+
+        theFnc();
+    </script>
+</body>
+</html>
